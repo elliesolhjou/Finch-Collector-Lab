@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% block content%}
+
+<h1>Finch List</h1>
+{% for finch in finches %}
+    <div class="card container-sm bg-primary opacity-50">
+        <div class="card-content text-white">
+            <span class="card-title">{{finch.name}}</span>
+            <p>{{finch.name}}'s breed' is {{finch.breed}}</p>
+            <p>She is {{finch.description}}</p>
+            <p>{{finch.name}} is {{finch.age}} years old</p>
+        </div>
+
+    </div>
+{%endfor%}
+
+
+
+
+
+{% endblock %}
