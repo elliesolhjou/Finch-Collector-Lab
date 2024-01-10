@@ -1,10 +1,9 @@
 {% extends 'base.html'%}
 {% block content%}
 
-<h1>Finch List</h1>
-{% for finch in finches %}
+<h1>{{finch.name| capfirst}}'s Detail</h1>
+
     <div class="card container-sm bg-primary opacity-75">
-        <a href="{% url 'detail' finch.id%}">
             <div class="card-content text-white text-start">
                 <span class="card-title"><strong>{{finch.name| capfirst}}</strong></span>
                 <br>
@@ -15,10 +14,6 @@
             </div>
         </a>
     </div>
-{%endfor%}
-
-
-
 
 
 {% endblock %}
