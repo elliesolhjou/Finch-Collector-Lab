@@ -12,7 +12,9 @@
                 <p>threats: {{finch.threats}}</p>
                 <p>{{finch.name| capfirst}} resides is in  {{finch.habitat}}.</p>
             </div>
-        </a>
+            <a href="{%url 'finch_update' finch.id%}" class="text-white">Update</a>
+            <a href="{%url 'finch_delete' finch.id%}" class="text-white">Delete</a>
+
     </div>
 
 

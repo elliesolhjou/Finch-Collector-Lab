@@ -2,6 +2,7 @@
 {% block content%}
 
 <h1>Finch List</h1>
+<a href="{% url 'finch_create'%}"> Add a Finch here!</a>
 {% for finch in finches %}
     <div class="card container-sm bg-primary opacity-75">
         <a href="{% url 'detail' finch.id%}">
